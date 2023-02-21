@@ -1,0 +1,44 @@
+{
+  "id": "3484228",
+  "name": "sdn",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "902029",
+      "name": "标签",
+      "font_class": "biaoqian",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "18169578",
+      "name": "服务器主机,电脑主机",
+      "font_class": "server-host-full",
+      "unicode": "e929",
+      "unicode_decimal": 59689
+    },
+    {
+      "icon_id": "21053639",
+      "name": "端口",
+      "font_class": "duankou",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "21053735",
+      "name": "交换机",
+      "font_class": "jiaohuanji",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    },
+    {
+      "icon_id": "21053755",
+      "name": "控制器",
+      "font_class": "kongzhiqi",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    }
+  ]
+}

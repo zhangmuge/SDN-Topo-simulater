@@ -1,0 +1,33 @@
+version: "3"
+services:
+  mininet:
+    image: registry.cn-hangzhou.aliyuncs.com/zhangmuge/mininet
+    ports:
+      - "6653:6653"
+      - "6640:6640"
+      - "5566:5566"
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /lib/modules:/lib/modules
+      - ./start.py:/root/start.py
+      - ./sources.list:/etc/apt/sources.list
+      - ./scan_arp.py:/root/scan_arp.py
+    tty: true
+    network_mode: "bridge"
+    privileged: true
+    environment:
+      - DISPLAY
+    restart: always
+  ryu:
+    image: registry.cn-hangzhou.aliyuncs.com/zhangmuge/ryu
+    ports:
+      - "6633:6633"
+      - "8080:8080"
+      - "2345:2345"
+    tty: true
+    volumes:
+      - ./ryu:/ryu
+    entrypoint:
+      - python3
+      - /ryu/start.py
+    restart: always
